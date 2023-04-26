@@ -3,7 +3,7 @@ Type: Package
 Title: summarize a dataframe with basic measures
 Version: 0.1.0
 Author: Foued Hamouda <foha2001@gmail.com>
-Maintainer: TFoued Hamouda <foha2001@gmail.com>
+Maintainer: Foued Hamouda <foha2001@gmail.com>
 Description: This pacakge can be used to determine describtive statistics and export value into excel file.
 License: GPL-3
 Encoding: UTF-8
@@ -11,3 +11,6 @@ LazyData: true
 RoxygenNote: 7.2.3
 URL: https://github.com/Foha2001/fdesc
 BugReports: https://github.com/Foha2001/fdesc/issues
+Imports: 
+    fBasics
+Roxygen: list(markdown = TRUE)
