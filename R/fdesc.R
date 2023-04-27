@@ -1,15 +1,15 @@
-#' my descriptive package for data check and analysis
+#' My Descriptive Package for Data Check and Analysis
 #'
-#' @param prices the stock prices of companies
+#' @param prices is the stock prices of firms
 #'
 #' @return the descriptive statistics and a file excel
 #' @export
 #' @importFrom fBasics skewness kurtosis
 #' @importFrom stats median sd
 
-desc <- function(prices) {
+fdesc <- function(prices) {
 r <-  diff(log(prices))
-descs <- do.call(data.frame,
+fdescs <- do.call(data.frame,
                 list(mean = apply(r, 2, mean,na.rm=TRUE),
                      sd = apply(r, 2, sd,na.rm=TRUE),
                      median = apply(r, 2, median,na.rm=TRUE),
@@ -18,8 +18,7 @@ descs <- do.call(data.frame,
                      skew = apply(r, 2, skewness,na.rm = TRUE),
                      kurt = apply(r,2,kurtosis, na.rm=TRUE)))
 
-descs <- cbind(rownames(descs),descs)
-return(descs)
-
+fdescs <- cbind(rownames(descs),descs)
+return(fdescs)
 
 }
