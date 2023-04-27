@@ -1,10 +1,10 @@
 Package: fdesc
 Type: Package
-Title: summarize a dataframe with basic measures
+Title: summarize a datbase with basic measures
 Version: 0.1.0
 Author: Foued Hamouda <foha2001@gmail.com>
 Maintainer: Foued Hamouda <foha2001@gmail.com>
-Description: This pacakge can be used to determine describtive statistics and export value into excel file.
+Description: This pacakge can be used to determine main describtive statistics and export value into excel file.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

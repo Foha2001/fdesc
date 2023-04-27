@@ -1,8 +1,8 @@
 #' My Descriptive Package for Data Check and Analysis
 #'
-#' @param x is the stock prices of xts data
+#' @param x is an xts data data with multiple variables
 #'
-#' @return the descriptive statistics and a file excel
+#' @return the descriptive statistics as a prepared table
 #' @export
 #' @importFrom fBasics skewness kurtosis
 #' @importFrom stats median sd

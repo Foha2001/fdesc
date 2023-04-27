@@ -7,10 +7,10 @@
 desc(x)
 }
 \arguments{
-\item{x}{is the stock prices of xts data}
+\item{x}{is an xts data data with multiple variables}
 }
 \value{
-the descriptive statistics and a file excel
+the descriptive statistics as a prepared table
 }
 \description{
 My Descriptive Package for Data Check and Analysis
