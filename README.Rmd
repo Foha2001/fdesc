@@ -18,12 +18,14 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of fdesc is to This pacakge can be used to determine describtive statistics and export value into excel file.
+The goal of fdesc is to measure describtive statistics and export values into excel file in table format.
 
 ## Installation
 
 You can install the development version of fdesc like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r}
+library(devtools)
+devtools::install_github("Foha2001/tunisianfirms")
 ```
+
