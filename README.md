@@ -17,7 +17,7 @@ You can install the development version of fdesc like so:
 library(devtools)
 #> Warning: le package 'devtools' a été compilé avec la version R 4.2.3
 #> Le chargement a nécessité le package : usethis
-devtools::install_github("Foha2001/tunisianfirms")
-#> Skipping install of 'tunisianfirms' from a github remote, the SHA1 (397c5975) has not changed since last install.
+devtools::install_github("Foha2001/fdesc")
+#> Skipping install of 'fdesc' from a github remote, the SHA1 (08ade1d6) has not changed since last install.
 #>   Use `force = TRUE` to force installation
 ```

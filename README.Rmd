@@ -26,6 +26,6 @@ You can install the development version of fdesc like so:
 
 ```{r}
 library(devtools)
-devtools::install_github("Foha2001/tunisianfirms")
+devtools::install_github("Foha2001/fdesc")
 ```
 
