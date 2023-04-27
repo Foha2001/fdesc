@@ -21,5 +21,22 @@ desc <- do.call(data.frame,
                      kurt = apply(r,2,kurtosis, na.rm=TRUE)))
 
 return(desc)
+}
+
+
+#' This function is used to export to xls
+#'
+#' @param y the describtive statistics output from \code{\link{desc}} function
+#'
+#' @return Excel file output with name descstatistics in the working directory
+#' @export
+#' @importFrom writexl write_xlsx
+#'
+export <- function(y) {
+  y <- cbind(rownames(y),y)
+  write_xlsx(y,"descstatistics.xlsx")
 
 }
+
+
+
