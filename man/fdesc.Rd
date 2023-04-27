@@ -7,7 +7,7 @@
 fdesc(prices)
 }
 \arguments{
-\item{prices}{is the stock prices of firms}
+\item{prices}{is the stock prices of datframe of firms}
 }
 \value{
 the descriptive statistics and a file excel

@@ -1,6 +1,6 @@
 #' My Descriptive Package for Data Check and Analysis
 #'
-#' @param prices is the stock prices of firms
+#' @param prices is the stock prices of datframe of firms
 #'
 #' @return the descriptive statistics and a file excel
 #' @export
