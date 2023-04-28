@@ -26,6 +26,34 @@ You can install the development version of fdesc like so:
 
 ```{r}
 library(devtools)
+```
+## Installation
+
+You can install the development version of fdesc like so:
+
+``` r
+library(devtools)
+```
+
+``` r
 devtools::install_github("Foha2001/fdesc")
 ```
+## Example
+
+```{r}
+library(fdesc)
+```
+To describe your database run this code \code{\link{desc}}
+```{r}
+mytable<- desc(data)
+mytable
+```
+
+To export your Table to Excel format 
+
+```{r}
+export(mytable)
+```
+You will find your Excel table with the name descstatistics.xlsx
+
 
