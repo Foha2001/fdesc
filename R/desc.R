@@ -1,17 +1,17 @@
-#' My Descriptive Package for Data Check and Analysis
+#' Create table of Descriptive statistics
 #'
 #' @param x is an xts data data with multiple variables
 #'
-#' @return the descriptive statistics as a prepared table
+#' @return the descriptive statistics for the log return
 #' @export
 #' @importFrom fBasics skewness kurtosis
 #' @importFrom stats median sd
 #' @importFrom stats na.omit
 
-desc <- function(x) {
+Rdesc <- function(x) {
 r <-  diff(log(x))
 r<- na.omit(r)
-desc <- do.call(data.frame,
+Rdesc <- do.call(data.frame,
                 list(mean = apply(r, 2, mean,na.rm=TRUE),
                      sd = apply(r, 2, sd,na.rm=TRUE),
                      median = apply(r, 2, median,na.rm=TRUE),
@@ -20,13 +20,39 @@ desc <- do.call(data.frame,
                      skew = apply(r, 2, skewness,na.rm = TRUE),
                      kurt = apply(r,2,kurtosis, na.rm=TRUE)))
 
-return(desc)
+return(Rdesc)
+}
+
+
+#' Create table of Descriptive statistics
+#'
+#' @param x is an xts data data with multiple variables
+#'
+#' @return the descriptive statistics for the raw data
+#' @export
+#' @importFrom fBasics skewness kurtosis
+#' @importFrom stats median sd
+#' @importFrom stats na.omit
+
+desc <- function(x) {
+
+  x<- na.omit(x)
+  desc <- do.call(data.frame,
+                  list(mean = apply(x, 2, mean,na.rm=TRUE),
+                       sd = apply(x, 2, sd,na.rm=TRUE),
+                       median = apply(x, 2, median,na.rm=TRUE),
+                       min = apply(x, 2, min,na.rm=TRUE),
+                       max = apply(x, 2, max,na.rm=TRUE),
+                       skew = apply(x, 2, skewness,na.rm = TRUE),
+                       kurt = apply(x,2,kurtosis, na.rm=TRUE)))
+
+  return(desc)
 }
 
 
 #' This function is used to export to xls
 #'
-#' @param y the describtive statistics output from \code{\link{desc}} function
+#' @param y the describtive statistics output from \code{\link{desc}} or \code{\link{Rdesc}} function
 #'
 #' @return Excel file output with name descstatistics in the working directory
 #' @export

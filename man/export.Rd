@@ -7,7 +7,7 @@
 export(y)
 }
 \arguments{
-\item{y}{the describtive statistics output from \code{\link{desc}} function}
+\item{y}{the describtive statistics output from \code{\link{desc}} or \code{\link{Rdesc}} function}
 }
 \value{
 Excel file output with name descstatistics in the working directory
